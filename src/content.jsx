@@ -2,7 +2,7 @@ import CardComponent from "./details"
 
 const Content = () => {
   return (
-    <div className="px-4 py-16 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="px-4 py-16 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8">
       <div className="max-w-xl mb-10 md:mx-auto lg:max-w-2xl md:mb-12">
         <h2 className="max-w-lg mb-6 font-mono text-3xl font-bold text-gray-900  ">
           Devs connect
@@ -29,7 +29,7 @@ const Content = () => {
             </div>
             <input
               type="search"
-              class="block w-full p-4 pl-10 text-xl text-blue-600 border border-gray-300 rounded-xl bg-white drop-shadow-lg"
+              class="block w-full p-4 pl-10 text-xl text-sky-600 border border-gray-300 rounded-xl bg-white drop-shadow-lg"
               placeholder="Search for a dev..."
               required
             />
