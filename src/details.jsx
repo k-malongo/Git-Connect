@@ -3,6 +3,8 @@ import { MdLocationOn } from "react-icons/md";
 import { FiLink } from "react-icons/fi";
 import { FaTwitter } from "react-icons/fa";
 import { BiBuildings } from "react-icons/bi";
+import dayjs from "dayjs";
+
 
 export default function CardComponent({ data }) {
   return (
@@ -16,7 +18,7 @@ export default function CardComponent({ data }) {
         <div className="space-y-2 col-span-3 p-4">
           <div className="flex flex-wrap lg:justify-between ">
             <p className="text-2xl pr-4">{data.name}</p>
-            <p className="pt-2">Joined {data.created_at}</p>
+            <p className="pt-2">Joined {dayjs("2016-01-04 10:34:23").format("d MMM YYYY")}</p>
           </div>
           <div className="">
             <a href={data.url} className="text-sky-600">
