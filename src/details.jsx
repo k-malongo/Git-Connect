@@ -18,10 +18,10 @@ export default function CardComponent({ data }) {
         <div className="space-y-2 col-span-3 p-4">
           <div className="flex flex-wrap lg:justify-between ">
             <p className="text-2xl pr-4">{data.name}</p>
-            <p className="pt-2">Joined {dayjs("2016-01-04 10:34:23").format("d MMM YYYY")}</p>
+            <p className="pt-2 font-extralight text-blue-400">Joined {dayjs("2016-01-04 10:34:23").format("d MMM YYYY")}</p>
           </div>
           <div className="">
-            <a href={data.url} className="text-sky-600">
+            <a href={data.html_url} className="text-sky-600">
               {data.login}
             </a>
           </div>
@@ -67,8 +67,8 @@ export default function CardComponent({ data }) {
                   <FiLink />
                 </span>
                 <p>
-                  {data.url ? (
-                    <a href={data.url}>{data.url}</a>
+                  {data.html_url ? (
+                    <a href={data.html_url}>{data.html_url}</a>
                   ) : (
                     "Not Available"
                   )}
