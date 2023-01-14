@@ -16,7 +16,7 @@ export default function CardComponent({ data }) {
         <div className="space-y-2 col-span-3 p-4">
           <div className="flex flex-wrap lg:justify-between ">
             <p className="text-2xl pr-4">{data.name}</p>
-            <p className="pt-2">Joined 31 Jan 2018</p>
+            <p className="pt-2">Joined {data.created_at}</p>
           </div>
           <div className="">
             <a href={data.url} className="text-sky-600">
