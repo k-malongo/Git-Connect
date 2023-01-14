@@ -1,6 +1,26 @@
-import CardComponent from "./details"
-
+import React, { useState, useEffect } from "react";
+import CardComponent from "./details";
 const Content = () => {
+  const [change, setChange] = useState("k-malongo");
+
+  const [search, setSearch] = useState("k-malongo");
+  const [dataa, setDataa] = useState("");
+
+  useEffect(() => {
+    fetch(`https://api.github.com/users/${search}`)
+      .then((res) => res.json())
+      .then((data) => {
+        {
+          setDataa(data);
+        }
+      });
+  }, [search]);
+  console.log(dataa);
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    setSearch(change)
+  }
   return (
     <div className="px-4 py-16 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8">
       <div className="max-w-xl mb-10 md:mx-auto lg:max-w-2xl md:mb-12">
@@ -8,13 +28,13 @@ const Content = () => {
           Devs connect
         </h2>
 
-        <form className="mb-8">
+        <form className="mb-8" onSubmit={(e) => handleSubmit(e)}>
           <div class="relative">
             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
               <svg
                 aria-hidden="true"
-                class="w-7 h-7 text-gray-500 dark:text-gray-400"
-                fill="none"
+                class="w-7 h-7 text-black"
+                fill=""
                 stroke="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -29,6 +49,7 @@ const Content = () => {
             </div>
             <input
               type="search"
+              onChange={(e) => setChange(e.target.value.trim())}
               class="block w-full p-4 pl-10 text-xl text-sky-600 border border-gray-300 rounded-xl bg-white drop-shadow-lg"
               placeholder="Search for a dev..."
               required
@@ -41,11 +62,8 @@ const Content = () => {
             </button>
           </div>
         </form>
-      <CardComponent />
-
+        <CardComponent data={dataa}/>
       </div>
-
-     
     </div>
   );
 };
