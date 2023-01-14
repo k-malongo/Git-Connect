@@ -1,27 +1,27 @@
 ## Table of contents
 
-- [Radio EA](#radio-ea)
+- [Git connect](#git-connect)
   - [Links](#links)
 - [The project](#the-project)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
-- [Author](#author)
+- [Author](#https://github.com/k-malongo)
 
 
-## Radio EA
-Radio East Africa is an online web application using an api to get live streaming links and play from the app
+## Git-Connect
+In this project, we use GitHub users API to pull user profile data and display a specific user from the typed input.
 
 ### The Project
 
 Users should be able to:
 
-- Listen to favourite radio station
-- Search radio station in East Africa
+- Search for a specific user
+- list user profile
 
 
 ### Links
 
-- GitHub URL: [GitHub](https://github.com/carreuky/Radio-EA)
+- GitHub URL: [GitHub](https://github.com/k-malongo/Git-Connect)
 - Live Site URL: [Live](https://radio-ea-carreuky.vercel.app/)
 
 
@@ -40,5 +40,5 @@ Users should be able to:
 
 ## Author
 
-- [GitHub](https://github.com/carreuky)
-- Kelvin Nderitu
+- [GitHub](https://github.com/k-malongo)
+- Kelvin Malongo
