@@ -22,7 +22,7 @@ Users should be able to:
 ### Links
 
 - GitHub URL: [GitHub](https://github.com/k-malongo/Git-Connect)
-- Live Site URL: [Live](https://radio-ea-carreuky.vercel.app/)
+- Live Site URL: [Live](https://transcendent-kulfi-d3635d.netlify.app/)
 
 
 ### Built with

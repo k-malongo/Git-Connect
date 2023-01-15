@@ -15,6 +15,11 @@ const Content = () => {
       position: toast.POSITION.TOP_CENTER,
     });
   };
+  const showSuccessMessage = () => {
+    toast.success("User Found", {
+      position: toast.POSITION.TOP_CENTER,
+    });
+  };
 
   useEffect(() => {
     fetch(`https://api.github.com/users/${search}`)
@@ -22,12 +27,10 @@ const Content = () => {
       .then((data) => {
         {
           if (!data.message) {
-          console.log("hello")
-
+            // showSuccessMessage()
             setDataa(data);
-          }
-          else {
-          console.log(data.message)
+          } else {
+            console.log(data.message);
 
             setErrors(data.message);
           }
@@ -47,14 +50,14 @@ const Content = () => {
         <h2 className="max-w-lg mb-6 font-mono text-3xl font-bold text-gray-900  ">
           Devs connect
         </h2>
-        {errors ===data.message ? (
+        {errors ? (
           <ul style={{ color: "red" }}>
-            {/* <li>{errors}</li> */}
             {showErrorMessage(errors)}
           </ul>
         ) : (
           ""
         )}
+        <ToastContainer />
         <form className="mb-8" onSubmit={(e) => handleSubmit(e)}>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
