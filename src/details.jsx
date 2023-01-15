@@ -8,7 +8,7 @@ import dayjs from "dayjs";
 
 export default function CardComponent({ data }) {
   return (
-    <div className="w-full p-8 shadow-md lg:max-w-1xl bg-white drop-shadow-lg rounded-xl ">
+    <div className="w-full p-4 shadow-md lg:max-w-1xl bg-white drop-shadow-lg rounded-xl ">
       <div className="grid grid-cols-4 gap-4">
         <img
           src={data.avatar_url}
