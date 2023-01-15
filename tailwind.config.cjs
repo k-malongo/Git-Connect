@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['ui-sans-serif', 'system-ui'],
-        'serif': ['ui-serif', 'Georgia'],
-        'mono': ['ui-monospace', 'SFMono-Regular'],
+        'poppins': ['Poppins', 'sans-serif'],
+        'oswald': ['Oswald', 'sans-serif'],
+        'mono':['Space', 'monospace']
 
       }
     },

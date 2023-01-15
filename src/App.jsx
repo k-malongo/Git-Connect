@@ -4,7 +4,7 @@ import Content from "./content"
 function App() {
 
   return (
-    <div className="font-mono bg-gray-50 h-screen">
+    <div className="font-poppins bg-gray-50 h-screen">
       <Content />
     </div>
   );

@@ -47,7 +47,7 @@ const Content = () => {
   return (
     <div className="px-4 py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8">
       <div className="max-w-xl mb-10 md:mx-auto lg:max-w-2xl md:mb-12">
-        <h2 className="max-w-lg mb-6 font-mono text-3xl font-bold text-gray-900  ">
+        <h2 className="max-w-lg mb-6  text-5xl font-bold text-gray-900  ">
           Devs connect
         </h2>
         {errors ? (
